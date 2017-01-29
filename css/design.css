@@ -27,7 +27,8 @@ nav {
 	background: #a699cd;
 }
 #heading {
-	margin: 50px 0px;
+	margin: 50px 0px 50px 0px;
+	margin-left: -5px;
 	background: #6633ff;
 	text-align: center;
 	position: fixed;
@@ -40,6 +41,8 @@ nav {
 		border-top-right-radius: 0px;
 		border-bottom-right-radius: 0px;
 		position: static;
+		box-shadow: none;
+		margin-left: 0px;
 	}
 }
 #main-img {
@@ -118,4 +121,21 @@ p {
 	p {
 		text-align: center;
 	}
+}
+/*-- Intro --*/
+#intro {
+	height: 100%;
+}
+#center {
+	margin-top: 125px;
+	margin-bottom: 250px;
+}
+#quote {
+	font-family: 'Plaster';
+	text-align: center;
+}
+h5 {
+	font-family: 'Warnes';
+	text-align: right;
+	margin-right: 25px;
 }
