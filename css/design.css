@@ -1,0 +1,121 @@
+body {
+	height: 100%;
+	width: 100%;
+	background: #6633ff;
+}
+
+
+/*----- Nav -----*/
+nav {
+	width: 85%;
+	margin: 0% 7.5% !important;
+	padding-bottom: 75px;
+	position: fixed;
+	top: 0;
+	background: #ff3366;
+	z-index: 9999;
+}
+
+
+/*----- Body -----*/
+aside {
+	width: 80%;
+	margin: 5% 10% 7.5% 10%;
+	background: #a699cd;
+}
+#heading {
+	margin: 50px 0px;
+	background: #6633ff;
+	text-align: center;
+	position: fixed;/*
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 7px 5px 8.5px rgba(102,51,255, .5), 0px -2px 8.5px rgba(102,51,255, .5);*/
+}
+@media (max-width: 991px){
+	#heading{
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		position: static;
+	}
+}
+#main-img {
+	width: 80%;
+	margin: 5% 10%;
+	height: auto;
+	border-radius: 50%;
+}
+h2, h6 {
+	font-family: 'Arsenal';
+	color: #ddd;
+	margin-top: -5px;
+}
+h6:hover, i:hover {
+	color: #fff;
+}
+#social-sites {
+	margin-bottom: 10px;
+}
+#social-sites > * {
+	margin: 5px 5px;
+	color: #a699cd;
+}
+
+.col-lg-8 {
+	background: #a699cd;
+}
+.col-lg-offset-4 {
+	background: #a699cd;
+}
+
+/* About Section Customization */
+#about {
+	margin-top: 55px;
+}
+#about, #about > * {
+	text-align: center;
+}
+
+/* Project Section Customization */
+#projects, #projects > * {
+	text-align: center;
+}
+li {
+	list-style: none;
+	text-align: right;
+	font-family: 'Comfortaa';
+	margin-right: 25px;
+	line-height: 2;
+}
+li a {
+	color: #ddd;
+}
+li a:hover {
+	color: #6633ff;
+	text-decoration: none;
+}
+/* Gallary Ssection Customization */
+#gallary {
+	padding-bottom: 0px;
+}
+h1 {
+	font-family: 'Dorsa';
+	font-weight: bolder;
+	letter-spacing: 15px;
+}
+hr {
+	max-width: 400px;
+	box-sizing: border-box;
+	border-color: #ddd;
+}
+p {
+	margin: 0px 25px 185px 25px;
+	font-family: 'Comfortaa';
+	text-align: right;
+	line-height: 2.5;
+}
+@media (max-width: 991px){
+	p {
+		text-align: center;
+	}
+}
