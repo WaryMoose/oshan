@@ -7,6 +7,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Arsenal|Comfortaa:700|Dorsa|Sofia|Plaster|Warnes|Economica" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+	<!-- LightGallary -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery/1.3.8/css/lightgallery.min.css">
+
 	<!-- Bootstrap CSS -->
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -27,6 +30,16 @@
 	 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	 crossorigin="anonymous">	
 	</script>
+
+	<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/lightgallery/1.3.8/js/lightgallery.min.js"></script>
+    <script src="js/thumbnail.js"></script>
+
+    <!-- lightgallery plugins -->
+    <!--<script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>-->
 </head>
 
 
@@ -93,6 +106,66 @@
 			
 			</div>		
 		</div>
+
+		<!-- Project Section -->
+		<div id="gallery">
+			<div class="col-lg-8 col-lg-offset-4 col-md-8 col-md-offset-4 col-sm-12 col-sm-offset-0">
+				<h1>Gallery</h1><hr>
+				<div id="lightgallery" class="row">
+				  <a href="assets/gallary/1.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/1.jpg" />
+				  </a>
+				  <a href="assets/gallary/2.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/2.jpg" />
+				  </a>
+				  <a href="assets/gallary/3.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/3.jpg" />
+				  </a>
+				  <a href="assets/gallary/4.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/4.jpg" />
+				  </a>
+				  <a href="assets/gallary/5.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/5.jpg" />
+				  </a>
+				  <a href="assets/gallary/6.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/6.jpg" />
+				  </a>
+				  <a href="assets/gallary/7.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/7.jpg" />
+				  </a>
+				  <a href="assets/gallary/8.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/8.jpg" />
+				  </a>
+				  <a href="assets/gallary/9.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/9.jpg" />
+				  </a>
+				  <a href="assets/gallary/10.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/10.jpg" />
+				  </a>
+				  <a href="assets/gallary/11.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/11.jpg" />
+				  </a>
+				  <a href="assets/gallary/12.jpg" class="col-md-4">
+				      <img class="img-responsive" src="assets/gallary/12.jpg" />
+				  </a>
+				</div>
+			
+			</div>		
+		</div>
 	</div>
+
+
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	        $("#lightgallery").lightGallery({
+			    thumbnail:true,
+			    animateThumb: true,
+			    showThumbByDefault: true,
+			    download: false,
+			    mode: 'lg-slide',
+			    preload: 2,
+	        }); 
+	    });
+	</script>
 </body>
 </html>

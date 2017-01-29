@@ -15,7 +15,7 @@ nav {
 	position: fixed;
 	top: 0;
 	background: #ff3366;
-	z-index: 9999;
+	z-index: 9998;
 }
 
 
@@ -79,9 +79,13 @@ h6:hover, i:hover {
 /* Project Section Customization */
 #projects {
 	height: 100%;
+	padding-top: 100px;
 }
 #projects, #projects > * {
 	text-align: center;
+}
+ul {
+	margin-bottom: 210px;
 }
 li {
 	list-style: none;
@@ -98,8 +102,10 @@ li a:hover {
 	text-decoration: none;
 }
 /* Gallary Ssection Customization */
-#gallary {
-	padding-bottom: 0px;
+#gallery {
+	padding-top: 200px;
+	padding-bottom: 50px;
+	text-align: center;
 }
 h1 {
 	font-family: 'Dorsa';
@@ -127,7 +133,7 @@ p {
 	height: 100%;
 }
 #center {
-	margin-top: 125px;
+	margin-top: 150px;
 	margin-bottom: 250px;
 }
 #quote {
@@ -138,4 +144,30 @@ h5 {
 	font-family: 'Warnes';
 	text-align: right;
 	margin-right: 25px;
+}
+#lightgallery {
+	margin-right: 20px;
+	margin-bottom: 125px;
+}
+#lightgallery> a {
+	overflow: hidden;
+}
+a.col-md-4 {
+	padding: 0;
+	margin: 0;
+}
+a.col-md-4:hover img {
+	background: #111;
+	opacity: .5;
+	transform: scale3d(1.045, 1.045, 1.045);
+	transition: .25s ease;
+}
+img {
+	height: auto;
+}
+.in {
+	background: rgba(0,0,0, .95);
+}
+.in, .lg-outer, .lg-outer > * {
+	z-index: 9999;
 }
