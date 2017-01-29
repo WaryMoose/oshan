@@ -1,6 +1,8 @@
-body {
+html, body {
 	height: 100%;
 	width: 100%;
+}
+body {
 	background: #6633ff;
 }
 
@@ -8,7 +10,7 @@ body {
 /*----- Nav -----*/
 nav {
 	width: 85%;
-	margin: 0% 7.5% !important;
+	margin: 0% 7.5%;
 	padding-bottom: 75px;
 	position: fixed;
 	top: 0;
@@ -18,8 +20,9 @@ nav {
 
 
 /*----- Body -----*/
-aside {
+#body-content {
 	width: 80%;
+	height: auto;
 	margin: 5% 10% 7.5% 10%;
 	background: #a699cd;
 }
@@ -27,10 +30,10 @@ aside {
 	margin: 50px 0px;
 	background: #6633ff;
 	text-align: center;
-	position: fixed;/*
+	position: fixed;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	box-shadow: 7px 5px 8.5px rgba(102,51,255, .5), 0px -2px 8.5px rgba(102,51,255, .5);*/
+	box-shadow: 7px 5px 8.5px rgba(102,51,255, .5), 0px -2px 8.5px rgba(102,51,255, .5);
 }
 @media (max-width: 991px){
 	#heading{
@@ -61,22 +64,19 @@ h6:hover, i:hover {
 	color: #a699cd;
 }
 
-.col-lg-8 {
-	background: #a699cd;
-}
-.col-lg-offset-4 {
-	background: #a699cd;
-}
 
 /* About Section Customization */
 #about {
-	margin-top: 55px;
+	padding-top: 35px;
 }
 #about, #about > * {
 	text-align: center;
 }
 
 /* Project Section Customization */
+#projects {
+	height: 100%;
+}
 #projects, #projects > * {
 	text-align: center;
 }
